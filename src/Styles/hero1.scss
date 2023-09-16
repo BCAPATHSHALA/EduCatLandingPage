@@ -1,0 +1,117 @@
+.hero1 {
+  width: 100vw;
+  height: 39.1vw;
+  background-color: #323737;
+  display: flex;
+  justify-content: center;
+  .leftHero1 {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    > h2 {
+      color: #1d8379;
+      font-size: 3em;
+      font-family: playfair;
+      > span {
+        color: #f7f8f7;
+        font-family: playfair;
+      }
+    }
+    > p {
+      color: #f7f8f7;
+      font-size: 2em;
+      font-family: playfair;
+    }
+  }
+  .rightHero1 {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    > form {
+      width: 50%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+      background-color: #1d8379;
+      gap: 10px;
+      padding: 20px;
+      > h2 {
+        text-transform: uppercase;
+        font-family: playfair;
+        font-size: 2em;
+        color: #f3f3f3;
+        width: 100%;
+        text-align: center;
+      }
+      > input {
+        width: 100%;
+        height: 40px;
+        outline: none;
+        border: none;
+        font-size: medium;
+        font-weight: 700;
+        color: #1d8379;
+        padding: 20px;
+      }
+      > .message {
+        height: 100px;
+        padding-top: 20px;
+        padding-left: 20px;
+        text-align: start;
+      }
+      > button {
+        width: 100%;
+        height: 40px;
+        background-color: #323232;
+        color: #f3f3f3;
+        font-size: 1.3em;
+        font-weight: 700;
+        outline: none;
+        border: none;
+        transition: all 0.5s ease-in;
+        &:hover {
+          color: #1d8379;
+        }
+      }
+    }
+  }
+}
+
+// RESPONSIVE FOR TABLET
+@media screen and (max-width: 769px) {
+  .hero1 {
+    flex-direction: column;
+    height: 100vh;
+    > .rightHero1 {
+      margin-bottom: 20px;
+    }
+  }
+}
+// RESPONSIVE FOR MOBILE
+@media screen and (max-width: 427px) {
+  .hero1 {
+    .leftHero1 {
+      > h2 {
+        font-size: 1.7em;
+      }
+      > p {
+        font-size: 1em;
+      }
+    }
+    .rightHero1 {
+      margin-bottom: 0;
+      > form {
+        width: 100%;
+        gap: 15px;
+        padding: 10px;
+        > h2 {
+          font-size: 1.5em;
+        }
+      }
+    }
+  }
+}

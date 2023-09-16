@@ -1,0 +1,62 @@
+.hero5 {
+  width: 100vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  background-color: #ffffff;
+  flex-direction: row-reverse;
+  .leftHero5 {
+    width: 70%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 20px;
+    padding: 50px;
+    > h2 {
+      font-family: playfair;
+      font-size: 2rem;
+      color: #136e64;
+    }
+    > p {
+      text-align: justify;
+      font-family: playfair;
+      font-size: 1.4rem;
+      font-weight: 400;
+      color: #323232;
+    }
+  }
+}
+
+// RESPONSIVE FOR TABLET
+@media screen and (max-width: 769px) {
+  .hero5 {
+    // flex-direction: ;
+    .leftHero5 {
+      width: 90%;
+      padding: 30px;
+      > h2 {
+        font-size: 1.5rem;
+      }
+      > p {
+        font-size: 1rem;
+      }
+    }
+  }
+}
+
+// RESPONSIVE FOR MOBILE
+@media screen and (max-width: 427px) {
+  .hero5 {
+    .leftHero5 {
+      width: 95%;
+      > h2 {
+        font-size: 1rem;
+      }
+      > p {
+        font-size: 0.9rem;
+      }
+    }
+  }
+}

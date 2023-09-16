@@ -1,0 +1,26 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600;700;800&family=Roboto:wght@100;300;400;500;700;900&display=swap");
+
+@import "home";
+@import "header";
+@import "logo";
+@import "hero1";
+@import "hero2";
+@import "hero3";
+@import "hero4";
+@import "hero5";
+@import "footer";
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Roboto", sans-serif;
+}
+
+.App {
+  width: 100vw;
+  height: auto;
+  position: relative;
+  display: flex;
+  justify-content: center;
+}

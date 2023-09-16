@@ -1,0 +1,26 @@
+.header {
+  width: 100%;
+  height: 50px;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  background-color: #1f7875;
+  color: #fff;
+  > p {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    margin-right: 50px;
+  }
+}
+
+// Responsive logo for mobile
+@media screen and (max-width: 426px) {
+  .header {
+    justify-content: center;
+    > p {
+      margin-right: 0;
+    }
+  }
+}
